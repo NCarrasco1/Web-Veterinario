@@ -940,7 +940,7 @@ footer {
 
     header {
         width: 100%;
-        height: 20%;
+        height: 40%;
         /* Ajusta la altura según sea necesario para pantallas más pequeñas */
     }
 
@@ -972,24 +972,24 @@ footer {
     }
 
     nav>a {
-        font-size: 5px;
+        font-size: 10px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
         margin: 0 5px;
         /* Ajusta el margen según sea necesario */
     }
 
     .button-contacto {
-        width: 20%;
+        width: 30%;
         height: 3px;
     }
 
     .numero-contacto {
-        font-size: 4px;
+        font-size: 8px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
     .button-redes img {
-        height: 15px;
+        height: 25px;
         width: auto;
         margin: 10px 0;
         margin-right: 20px;
@@ -1007,25 +1007,25 @@ footer {
     }
 
     .textos-header h1 {
-        font-size: 14px;
+        font-size: 24px;
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     .textos-header h2 {
-        font-size: 10px;
+        font-size: 20px;
         margin-bottom: 0;
     }
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 60%;
+        margin-bottom: 20%;
         margin-top: 3px;
     }
 
     .whatsapp-button {
-        height: 30px;
-        width: 48%;
+        height: 35px;
+        width: 50%;
         font-size: 10px;
         padding: 0 5px;
         margin-bottom: 30%;
@@ -1034,12 +1034,12 @@ footer {
     .redes-sociales1 {
         position: relative;
         width: auto;
-        height: 15px;
-        margin-right: 10px;
+        height: 20px;
+        margin-right: 20px;
     }
 
     .textos-header h5 {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     .wave {
@@ -1055,7 +1055,7 @@ footer {
 
     .cards .card {
         height: 150px;
-        width: 30%;
+        width: 40%;
         margin-bottom: 20px;
     }
 
@@ -1180,7 +1180,7 @@ footer {
     }
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 400px) {
 
     /* Tamaño de la página */
     header {

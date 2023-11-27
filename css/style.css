@@ -1003,3 +1003,102 @@ footer {
         font-size: 20px;
     }
 }
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    /* Tamaño de la página */
+    header {
+        width: 100%;
+        height: 30%;
+    }
+    .titulo {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    /* Nav */
+
+    .logo {
+        top: -5px;
+        height: 40px;
+        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    }
+
+    nav {
+        padding: 2px 1px 0px 90px;        /* Reduzco el espacio alrededor de los enlaces de navegación */
+    }
+
+    nav>a {
+        font-size: 5px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+        margin: 0 5px;
+        /* Ajusta el margen según sea necesario */
+    }
+
+    .button-contacto {
+        width: 35%;
+        height: 5%;
+    }
+
+    .numero-contacto {
+        font-size: 4px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+    }
+
+    .button-redes{
+        margin: 12px 2px 0px -17px;
+    }
+    .button-redes img {
+        height: 12px;
+        width: auto;
+        margin: 5px 0;
+        margin-right: 20px;
+    }
+
+    .redes-sociales {
+        width: 5%;
+        height: 10%;
+        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    }
+
+    .textos-header {
+        font-size: 10px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+    }
+
+    .textos-header h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    .textos-header h2 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .button-container-whatsapp {
+        margin-left: 30%;
+        margin-bottom: 40%;
+        margin-top: 3px;
+    }
+
+    .whatsapp-button {
+        height: 40px;
+        width: 48%;
+        font-size: 10px;
+        padding: 0 5px;
+        margin-bottom: 30%;
+    }
+
+    .redes-sociales1 {
+        position: relative;
+        width: auto;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+
+
+}
+
+

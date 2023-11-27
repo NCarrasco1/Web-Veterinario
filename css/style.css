@@ -1,0 +1,1005 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.contenedor {
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    height: 650px;
+    background: linear-gradient(to right, hsla(191, 78%, 68%, 0), #2193b0);
+    background-image: url(../images/Portada7.png);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+.titulo {
+    font-family: 'Nunito', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.titulo3 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* Inicio Nav */
+
+.logo {
+    position: absolute;
+    top: -30px;
+    left: 20px;
+    width: auto;
+    height: 200px;
+}
+
+.navbar-container {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+}
+
+.mi-navbar {
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.4s ease;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    margin-top: 0;
+}
+
+.mi-navbar.scrolled {
+    background-color: rgba(255, 255, 255, 0.247);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0);
+}
+
+nav {
+    font-family: 'Nunito', sans-serif;
+    text-align: right;
+    padding: 10px 10px 0px 40px;
+}
+
+nav>a {
+    font-size: 20px;
+    color: rgb(248, 247, 247);
+    font-weight: bold;
+    text-decoration: none;
+    margin-right: 30px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+nav>a:hover {
+    transform: scale(1.2);
+    color: #ffb554;
+}
+
+
+.button-contacto {
+    background-color: transparent;
+    border: none;
+}
+
+.numero-contacto {
+    background-color: #00686c;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    /* Valor para hacer el botón redondo */
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    outline: none;
+}
+
+.numero-contacto:hover {
+    color: white;
+    background-color: #ff9915;
+    transform: scale(1.05);
+}
+
+.button-redes {
+    background-color: transparent;
+    border: none;
+}
+
+.redes-sociales {
+    position: relative;
+    top: 0;
+    left: 20px;
+    width: auto;
+    height: 35px;
+    margin: 20px;
+}
+
+.redes-sociales1 {
+    position: relative;
+    width: auto;
+    height: 30px;
+    margin-right: 20px;
+}
+
+header .textos-header {
+    display: flex;
+    height: 430px;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+.textos-header h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 70px;
+    color: black;
+    text-align: center;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+.textos-header h2 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    color: black;
+    text-align: center;
+    margin-left: 150px;
+    margin-bottom: 10px;
+}
+
+.button-container-whatsapp {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    background-color: #ff9915;
+    /* Color de fondo de WhatsApp */
+    color: #ffffff;
+    /* Color del texto */
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.whatsapp-button:hover {
+    background-color: #00696ca8;
+    color: white;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Seccion Servicios  */
+
+.titulo-card {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cards .card {
+    margin: 10px;
+    background: #0395a8;
+    display: flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+}
+
+.cards .card img {
+    margin: 10px;
+    width: 10px;
+    height: 10px;
+    object-fit: cover;
+    display: block;
+}
+
+.cards .card>.contenido-textos-card {
+    width: 20%;
+    color: #fff;
+}
+
+.card .contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+
+.clientes .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.clientes .card {
+    width: calc(33.33% - 40px);
+    /* Ajusta el ancho y el margen según tu diseño */
+    height: 150px;
+    margin: 20px;
+    background: #00696c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px 60px 20px 60px;
+    /* Ajusta el radio de borde según sea necesario */
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.6);
+    padding: 15px;
+}
+
+.clientes .card img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Seccion Ventajas del servicio veterinario a domicilio */
+.contendor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imagen-about-us {
+    width: 40%;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+}
+
+.sobre-nosotros .contenido-textos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+.contenido-textos h3 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.logosucces {
+    width: 40px;
+    height: 40px;
+}
+
+.contenido-textos p {
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin: 0;
+}
+
+/* Seccion Portafolio */
+
+.portafolio {
+    background-color: #f2f2f2;
+
+}
+
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 30%;
+    margin: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 15px 15px 6px 0 rgba(0, 0, 0, 0.322);
+    border-radius: 20px;
+}
+
+.imagen-port>img {
+    width: 100%;
+    height: 100%;
+    object-fit: conver;
+    display: block;
+    border-radius: 20px;
+}
+
+.hover-galeria {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: #ff9a15bd;
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img {
+    width: 50px;
+}
+
+.hover-galeria p {
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria {
+    transform: scale(1);
+}
+
+/* Seccion Precio */
+
+.contenedorprecio {
+    flex: 1;
+    padding: 60px 0;
+}
+
+.about-services {
+    background-color: #f2f2f2;
+    padding-bottom: 30px;
+    margin-top: 20px;
+    min-height: 80vh;
+    /* Asegura que el contenedor tenga al menos el 100% de la altura de la ventana */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.servicio-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.servicio-ind {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 40px;
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: #ff9a15d5;
+}
+
+.servicio-ind img {
+    width: 80%;
+    max-width: 100px;
+    height: auto;
+}
+
+.servicio-ind h3 {
+    color: white;
+    margin: 10px 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+.servicio-ind p {
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: #00686c;
+    /* Color azul para el precio */
+}
+
+/* Inicio Footer */
+
+footer {
+    background: #b4b2b2;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #000000;
+}
+
+.content-foo {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+.content-foo h4 {
+    color: rgb(36, 35, 35)717;
+    border-bottom: 3px solid #0395a8;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.content-foo p {
+    color: #302f2f;
+}
+
+.titulo-final {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    margin: 20px 0 0 0;
+    color: #9e979e;
+}
+
+.derechos-autor {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+}
+
+/* Seccion Media */
+
+@media screen and (max-width: 1200px) {
+
+    /* Seccion Header */
+    header {
+        height: 400px;
+        /* Reduzco la altura para adaptarse mejor a pantallas más pequeñas */
+    }
+
+    .titulo {
+        font-size: 30px;
+        /* Reduzco el tamaño de la fuente */
+        margin-bottom: 10px;
+        /* Reduzco el espacio inferior */
+    }
+
+    .titulo3 {
+        font-size: 18px;
+        /* Reduzco el tamaño de la fuente */
+        margin-bottom: 30px;
+        /* Reduzco el espacio inferior */
+    }
+
+    /* Nav */
+    .logo {
+        top: -20px;
+        /* Ajusto la posición del logo */
+        height: 150px;
+        /* Reduzco el tamaño del logo */
+    }
+
+    nav {
+        padding: 10px 10px 0px 20px;
+        /* Reduzco el espacio alrededor de los enlaces de navegación */
+    }
+
+    nav>a {
+        font-size: 16px;
+        /* Reduzco el tamaño de la fuente */
+        margin-right: 20px;
+        /* Aumento el espacio entre los enlaces */
+    }
+
+    .button-redes {
+        /* Estilos específicos para los enlaces de redes sociales en la versión móvil */
+        background-color: transparent;
+        border: none;
+        margin: 5px 0;
+        /* Ajusto el espacio alrededor de los iconos de redes sociales */
+    }
+
+    .button-redes img {
+        height: 35px;
+        /* Ajusta según sea necesario */
+        width: auto;
+        /* Esto mantendrá la proporción original de las imágenes */
+    }
+
+    .redes-sociales,
+    .redes-sociales1 {
+        margin: 10px 20px;
+        /* Ajusto el espacio alrededor de los iconos de redes sociales */
+    }
+
+    header .textos-header {
+        height: 300px;
+        /* Reduzco la altura del contenedor de texto */
+        margin-top: 40px;
+        /* Reduzco el espacio superior */
+        font-size: 30px;
+        /* Reduzco el tamaño de la fuente */
+    }
+
+    .textos-header h1 {
+        font-size: 30px;
+        /* Reduzco el tamaño de la fuente */
+        margin-left: 30%;
+        /* Centro el texto */
+        margin-bottom: 5px;
+        /* Reduzco el espacio inferior */
+    }
+
+    .textos-header h2 {
+        font-size: 20px;
+        /* Reduzco el tamaño de la fuente */
+        margin-left: 30%;
+        /* Centro el texto */
+        margin-bottom: 5px;
+        /* Reduzco el espacio inferior */
+    }
+
+    .button-container-whatsapp {
+        margin-left: 30%;
+        /* Centro el contenedor de botones */
+        margin-bottom: 20%;
+        /* Reduzco el espacio inferior */
+    }
+
+    .whatsapp-button {
+        font-size: 14px;
+        /* Reduzco el tamaño de la fuente */
+        padding: 8px 16px;
+        /* Reduzco el espacio alrededor del botón */
+    }
+
+    /* Seccion Main */
+    /* Clientes */
+
+    .cards {
+        flex-wrap: wrap;
+        /* Permite que las tarjetas se envuelvan en filas */
+        justify-content: space-evenly;
+    }
+
+    .cards .card {
+        width: 45%;
+        /* Ajusta el ancho para que haya dos elementos por fila */
+        margin-bottom: 20px;
+        /* Añade espacio entre las filas */
+    }
+
+    .cards .card img {
+        width: 20px;
+        /* Ajusta el tamaño de la imagen según sea necesario */
+        height: 20px;
+    }
+
+    .cards .card>.contenido-textos-card {
+        width: 100%;
+        /* Ocupa todo el ancho de la tarjeta en pantallas más pequeñas */
+        text-align: center;
+        /* Centra el texto */
+        margin-top: 10px;
+        /* Añade espacio entre la imagen y el texto */
+    }
+
+    /* Seccion Ventajas */
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-about-us {
+        width: 50%;
+        margin-right: 0;
+        margin-bottom: 20px;
+        /* Ajusta según sea necesario */
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    .contenido-textos {
+        order: -1;
+        /* Cambia el orden de la columna de texto a la primera posición */
+        margin-top: 20px;
+        /* Ajusta según sea necesario */
+    }
+
+    .contenido-textos h3 {
+        margin-left: 0;
+        /* Centra el título */
+    }
+
+    /* Portafolio */
+
+    .imagen-port {
+        width: 30%;
+    }
+
+    /* Seccion Precio */
+
+    .contenedorprecio {
+        padding: 30px 0;
+        /* Ajusta según sea necesario para pantallas más pequeñas */
+    }
+
+    .about-services {
+        min-height: auto;
+        /* Elimina la altura mínima para adaptarse al contenido */
+    }
+
+    .servicio-cont {
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* Cambia la dirección del contenedor de servicios a columna en pantallas más pequeñas */
+    }
+
+    .servicio-ind {
+        margin-bottom: 20px;
+        width: 48%;
+        /* Ajusta el ancho al 100% para ocupar toda la pantalla */
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 900px) {
+
+    /* Clientes */
+
+    .cards .card {
+        height: 150px;
+        width: 40%;
+        /* Ajusta el ancho para que haya dos elementos por fila */
+        margin-bottom: 20px;
+        /* Añade espacio entre las filas */
+    }
+
+    .cards .card img {
+        width: 40px;
+        /* Ajusta el tamaño de la imagen según sea necesario */
+        height: 40px;
+    }
+
+    /* Precio */
+    .contenedorprecio {
+        padding: 20px 0;
+        /* Ajusta según sea necesario para pantallas más pequeñas */
+    }
+
+    .about-services {
+        min-height: auto;
+        /* Elimina la altura mínima para adaptarse al contenido */
+    }
+
+    .servicio-cont {
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* Cambia la dirección del contenedor de servicios a columna en pantallas más pequeñas */
+    }
+
+    .servicio-ind {
+        margin-bottom: 20px;
+        width: 48%;
+        /* Ajusta el ancho al 45% para dos columnas de tres elementos cada una */
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .cards .card {
+        height: 150px;
+        width: 40%;
+        /* Ajusta el ancho para que haya dos elementos por fila */
+        margin-bottom: 20px;
+        /* Añade espacio entre las filas */
+    }
+
+    .cards .card img {
+        width: 40px;
+        /* Ajusta el tamaño de la imagen según sea necesario */
+        height: 40px;
+    }
+
+    .contenedorprecio {
+        padding: 20px 0;
+        /* Ajusta según sea necesario para pantallas más pequeñas */
+    }
+
+    .about-services {
+        height: auto;
+        /* Elimina la altura mínima para adaptarse al contenido */
+    }
+
+    .servicio-cont {
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* Cambia la dirección del contenedor de servicios a columna en pantallas más pequeñas */
+    }
+
+    .servicio-ind {
+        margin: 5px;
+        height: 150px;
+        width: 48%;
+        /* Ajusta el ancho al 48% para dos columnas de tres elementos cada una */
+    }
+}
+
+@media screen and  (max-width:500px) {
+
+
+    header {
+        width: 100%;
+        height: 50%;
+        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    }
+
+    .titulo {
+        font-size: 24px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+        margin-bottom: 10px;
+        /* Ajusta el margen según sea necesario */
+    }
+
+    .titulo3 {
+        font-size: 14px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+        margin-bottom: 20px;
+        /* Ajusta el margen según sea necesario */
+    }
+
+    /* Nav */
+
+    .logo {
+        top: -10px;
+        height: 80px;
+        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    }
+
+    nav {
+        padding: 5px 5px 0px 5px;
+        /* Reduzco el espacio alrededor de los enlaces de navegación */
+    }
+
+    nav>a {
+        font-size: 10px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+        margin: 0 5px;
+        /* Ajusta el margen según sea necesario */
+    }
+
+    .button-contacto {
+        width: 30%;
+        height: 3px;
+    }
+
+    .numero-contacto {
+        font-size: 12px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+    }
+
+    .button-redes img {
+        height: 22px;
+        width: auto;
+        margin: 15px 0;
+        margin-right: 25px;
+    }
+
+    .redes-sociales {
+        width: 5%;
+        height: 10%;
+        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    }
+
+    .textos-header {
+        font-size: 10px;
+        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+    }
+
+    .textos-header h1 {
+        font-size: 24px;
+        margin-bottom: 0;
+        margin-top: 5px;
+    }
+
+    .textos-header h2 {
+        font-size: 14px;
+        margin-bottom: 0;
+    }
+
+    .button-container-whatsapp {
+        margin-left: 30%;
+        margin-bottom: 40%;
+        margin-top: 3px;
+    }
+
+    .whatsapp-button {
+        height: 40px;
+        width: 48%;
+        font-size: 10px;
+        padding: 0 5px;
+        margin-bottom: 30%;
+    }
+
+    .redes-sociales1 {
+        position: relative;
+        width: auto;
+        height: 20px;
+        margin-right: 10px;
+    }
+
+    /* Servicios */
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards .card {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    .cards .card img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .cards .card>.contenido-textos-card {
+        width: 20%;
+        height: 20px;
+        text-align: center;
+        /* Centra el texto */
+        margin-top: 10px;
+        /* Añade espacio entre la imagen y el texto */
+    }
+
+    .titulo-card {
+        font-size: 10px;
+    }
+
+    /* Seccion Ventajas */
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-about-us {
+        width: 70%;
+        height: 70%;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    .contenido-textos {
+        order: -1;
+        margin-top: 20px;
+    }
+
+    .contenido-textos h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        /* margin: 10px 0 20px 0 ; */
+    }
+
+    .logosucces {
+        height: auto;
+        width: 5%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* Portafolio */
+    .imagen-port {
+        width: 25%;
+        height: 180px;
+    }
+
+    /* Seccion Precio */
+
+    .contenedorprecio {
+        padding: 20px 0;
+        /* Ajusta según sea necesario para pantallas más pequeñas */
+    }
+
+    .about-services {
+        min-height: auto;
+    }
+
+    .servicio-cont {
+        justify-content: space-evenly;
+        flex-direction: row;
+        /* Cambia la dirección del contenedor de servicios a columna en pantallas más pequeñas */
+    }
+
+    .servicio-ind {
+        margin-bottom: 60px;
+        width: 35%;
+        height: 150px;
+    }
+
+    .servicio-ind h3 {
+        font-size: 15px;
+    }
+    .servicio-ind p {
+        font-size: 15px;
+    }
+
+    /* Footer */
+
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4 {
+        border: none;
+    }
+
+    .content-foo p {
+        color: #000000;
+        border-bottom: 1px solid #0395a8;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final {
+        font-size: 20px;
+    }
+}

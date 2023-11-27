@@ -104,7 +104,7 @@ nav>a:hover {
 }
 
 .numero-contacto {
-    background-color: #009499;
+    background-color: #00c2c9;
     color: #ffffff;
     display: inline-block;
     padding: 10px 20px;
@@ -219,7 +219,7 @@ header .textos-header {
 }
 
 .whatsapp-button:hover {
-    background-color: #009499;
+    background-color: #01c0c7;
     color: white;
 }
 
@@ -248,7 +248,7 @@ header .textos-header {
 
 .cards .card {
     margin: 10px;
-    background: #009499;
+    background: #01b5bb;
     display: flex;
     width: 46%;
     height: 200px;
@@ -288,7 +288,7 @@ header .textos-header {
     /* Ajusta el ancho y el margen según tu diseño */
     height: 150px;
     margin: 20px;
-    background: #009499;
+    background: #00bac0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -462,7 +462,7 @@ header .textos-header {
     font-size: 28px;
     text-align: center;
     font-family: 'Nunito', sans-serif;
-    color: #00686c;
+    color: #0096c4;
     /* Color azul para el precio */
 }
 
@@ -939,7 +939,7 @@ footer {
 
     header {
         width: 100%;
-        height: 48%;
+        height: auto;
         /* Ajusta la altura según sea necesario para pantallas más pequeñas */
     }
 
@@ -961,8 +961,8 @@ footer {
 
     .logo {
         top: -10px;
-        height: 60px;
-        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+        height: 80px;
+        width: auto;
     }
 
     nav {
@@ -971,7 +971,7 @@ footer {
     }
 
     nav>a {
-        font-size: 10px;
+        font-size: 15px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
         margin: 0 5px;
         /* Ajusta el margen según sea necesario */
@@ -983,7 +983,7 @@ footer {
     }
 
     .numero-contacto {
-        font-size: 8px;
+        font-size: 12px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
@@ -1006,7 +1006,7 @@ footer {
     }
 
     .textos-header h1 {
-        font-size: 24px;
+        font-size: 34px;
         margin-bottom: 0;
         margin-top: 5px;
     }
@@ -1019,7 +1019,7 @@ footer {
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 20%;
+        margin-bottom: 5%;
         margin-top: 3px;
     }
 
@@ -1028,7 +1028,7 @@ footer {
         width: 50%;
         font-size: 10px;
         padding: 0 5px;
-        margin-bottom: 30%;
+        margin-bottom: 5%;
     }
 
     .redes-sociales1 {
@@ -1231,15 +1231,6 @@ footer {
         margin-right: 20px;
     }
 
-    /* .redes-sociales1 {
-        height: 12px;
-        width: auto;
-        margin: 0px 10px 9px;
-    } */
-    /* .redes-sociales {
-        width: 5%;
-        height: 10%;
-    } */
     .redes-sociales,
     .redes-sociales1 {
         width: 18px;

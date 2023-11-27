@@ -380,7 +380,7 @@ header .textos-header {
 .imagen-port>img {
     width: 100%;
     height: 100%;
-    object-fit: conver;
+    object-fit: cover;
     display: block;
     border-radius: 20px;
 }
@@ -1055,7 +1055,7 @@ footer {
 
     .cards .card {
         height: 150px;
-        width: 40%;
+        width: 38%;
         margin-bottom: 20px;
     }
 
@@ -1185,7 +1185,7 @@ footer {
     /* Tamaño de la página */
     header {
         width: 100%;
-        height: 40%;
+        height: 30%;
     }
 
     .titulo {
@@ -1197,20 +1197,17 @@ footer {
 
     .logo {
         top: -5px;
-        height: 40px;
-        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+        height: 60px;
     }
-
+    
     nav {
         padding: 2px 5px 0px;
         /* Reduzco el espacio alrededor de los enlaces de navegación */
     }
 
     nav>a {
-        font-size: 8px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+        font-size: 12px;
         margin: 0 5px;
-        /* Ajusta el margen según sea necesario */
     }
 
     .button-contacto {
@@ -1219,12 +1216,12 @@ footer {
     }
 
     .numero-contacto {
-        font-size: 8px;
+        font-size: 12px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
     .button-redes {
-        margin: 12px 2px 0px;
+        margin:auto;
     }
 
     .button-redes img {
@@ -1245,8 +1242,8 @@ footer {
     } */
     .redes-sociales,
     .redes-sociales1 {
-        width: 15px;
-        height: 15px;
+        width: 18px;
+        height: 18px;
     }
 
 
@@ -1256,13 +1253,13 @@ footer {
     }
 
     .textos-header h1 {
-        font-size: 15px;
+        font-size: 25px;
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     .textos-header h2 {
-        font-size: 10px;
+        font-size: 15px;
         margin-bottom: 0;
     }
 
@@ -1273,8 +1270,8 @@ footer {
     }
 
     .whatsapp-button {
-        height: 30px;
-        width: 50%;
+        height: 40px;
+        width: 60%;
         font-size: 4px;
         padding: 0 5px;
         margin-bottom: 0;
@@ -1285,7 +1282,7 @@ footer {
     }
 
     .textos-header h5 {
-        font-size: 8px;
+        font-size: 14px;
     }
 
     .wave {

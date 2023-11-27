@@ -104,7 +104,7 @@ nav>a:hover {
 }
 
 .numero-contacto {
-    background-color: #00686c;
+    background-color: #009499;
     color: #ffffff;
     display: inline-block;
     padding: 10px 20px;
@@ -197,7 +197,7 @@ header .textos-header {
 }
 
 .whatsapp-button:hover {
-    background-color: #00696ca8;
+    background-color: #009499;
     color: white;
 }
 
@@ -223,7 +223,7 @@ header .textos-header {
 
 .cards .card {
     margin: 10px;
-    background: #0395a8;
+    background: #009499;
     display: flex;
     width: 46%;
     height: 200px;
@@ -263,7 +263,7 @@ header .textos-header {
     /* Ajusta el ancho y el margen según tu diseño */
     height: 150px;
     margin: 20px;
-    background: #00696c;
+    background: #009499;
     display: flex;
     flex-direction: column;
     align-items: center;

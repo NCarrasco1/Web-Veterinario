@@ -175,12 +175,33 @@ header .textos-header {
     margin-bottom: 10px;
 }
 
+.whatsapp-content {
+    display: flex;
+    align-items: center;
+}
+
+.whatsapp-content h5 {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.textos-header h5 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
 .button-container-whatsapp {
     text-align: center;
     margin-top: 20px;
     margin-left: 150px;
     margin-bottom: 100px;
 }
+
 
 .whatsapp-button {
     display: inline-block;
@@ -194,6 +215,7 @@ header .textos-header {
     font-weight: bold;
     font-size: 16px;
     transition: background-color 0.3s;
+
 }
 
 .whatsapp-button:hover {
@@ -205,6 +227,9 @@ header .textos-header {
     position: absolute;
     bottom: 0;
     width: 100%;
+    height: 150px;
+    overflow: hidden;
+
 }
 
 /* Seccion Servicios  */
@@ -595,7 +620,7 @@ footer {
     }
 
     /* Seccion Main */
-    /* Clientes */
+    /* Servicios */
 
     .cards {
         flex-wrap: wrap;
@@ -728,11 +753,11 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     .cards .card {
         height: 150px;
-        width: 40%;
+        width: 20%;
         /* Ajusta el ancho para que haya dos elementos por fila */
         margin-bottom: 20px;
         /* Añade espacio entre las filas */
@@ -768,12 +793,12 @@ footer {
     }
 }
 
-@media screen and  (max-width:500px) {
+@media screen and (max-width:500px) {
 
 
     header {
         width: 100%;
-        height: 50%;
+        height: 20%;
         /* Ajusta la altura según sea necesario para pantallas más pequeñas */
     }
 
@@ -795,37 +820,37 @@ footer {
 
     .logo {
         top: -10px;
-        height: 80px;
+        height: 60px;
         /* Ajusta la altura según sea necesario para pantallas más pequeñas */
     }
 
     nav {
-        padding: 5px 5px 0px 5px;
+        padding: 2px 2px 0px 2px;
         /* Reduzco el espacio alrededor de los enlaces de navegación */
     }
 
     nav>a {
-        font-size: 10px;
+        font-size: 5px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
         margin: 0 5px;
         /* Ajusta el margen según sea necesario */
     }
 
     .button-contacto {
-        width: 30%;
+        width: 20%;
         height: 3px;
     }
 
     .numero-contacto {
-        font-size: 12px;
+        font-size: 4px;
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
     .button-redes img {
-        height: 22px;
+        height: 15px;
         width: auto;
-        margin: 15px 0;
-        margin-right: 25px;
+        margin: 10px 0;
+        margin-right: 20px;
     }
 
     .redes-sociales {
@@ -840,24 +865,24 @@ footer {
     }
 
     .textos-header h1 {
-        font-size: 24px;
+        font-size: 14px;
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     .textos-header h2 {
-        font-size: 14px;
+        font-size: 10px;
         margin-bottom: 0;
     }
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 40%;
+        margin-bottom: 60%;
         margin-top: 3px;
     }
 
     .whatsapp-button {
-        height: 40px;
+        height: 30px;
         width: 48%;
         font-size: 10px;
         padding: 0 5px;
@@ -867,8 +892,16 @@ footer {
     .redes-sociales1 {
         position: relative;
         width: auto;
-        height: 20px;
+        height: 15px;
         margin-right: 10px;
+    }
+
+    .textos-header h5{
+        font-size: 8px;
+    }
+
+    .wave{
+        height: 30px;
     }
 
     /* Servicios */
@@ -880,7 +913,7 @@ footer {
 
     .cards .card {
         height: 150px;
-        width: 150px;
+        width: 30%;
         margin-bottom: 20px;
     }
 
@@ -943,7 +976,7 @@ footer {
 
     /* Portafolio */
     .imagen-port {
-        width: 25%;
+        width: 35%;
         height: 180px;
     }
 
@@ -973,6 +1006,7 @@ footer {
     .servicio-ind h3 {
         font-size: 15px;
     }
+
     .servicio-ind p {
         font-size: 15px;
     }
@@ -1004,12 +1038,14 @@ footer {
     }
 }
 
-@media screen and (min-width: 100px) and (max-width: 500px) {
+@media screen and (max-width: 300px) {
+
     /* Tamaño de la página */
     header {
         width: 100%;
         height: 30%;
     }
+
     .titulo {
         font-size: 14px;
         margin-bottom: 10px;
@@ -1024,7 +1060,8 @@ footer {
     }
 
     nav {
-        padding: 2px 1px 0px 90px;        /* Reduzco el espacio alrededor de los enlaces de navegación */
+        padding: 2px 1px 0px 90px;
+        /* Reduzco el espacio alrededor de los enlaces de navegación */
     }
 
     nav>a {
@@ -1044,9 +1081,10 @@ footer {
         /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
-    .button-redes{
+    .button-redes {
         margin: 12px 2px 0px -17px;
     }
+
     .button-redes img {
         height: 12px;
         width: auto;
@@ -1066,39 +1104,119 @@ footer {
     }
 
     .textos-header h1 {
-        font-size: 24px;
+        font-size: 14px;
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     .textos-header h2 {
-        font-size: 14px;
+        font-size: 10px;
         margin-bottom: 0;
     }
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 40%;
+        /* Ajusta según tus necesidades */
+        margin-bottom: 80%;
+        /* Ajusta según tus necesidades */
         margin-top: 3px;
     }
 
     .whatsapp-button {
-        height: 40px;
-        width: 48%;
-        font-size: 10px;
+        height: 25px;
+        /* Ajusta según tus necesidades */
+        width: 50%;
+        /* Ajusta según tus necesidades */
+        font-size: 4px;
+        /* Ajusta según tus necesidades */
         padding: 0 5px;
         margin-bottom: 30%;
+        /* Ajusta según tus necesidades */
     }
 
     .redes-sociales1 {
-        position: relative;
+        height: 15px;
+        /* Ajusta según tus necesidades */
         width: auto;
+        margin: 2px -4px;
+        /* Ajusta según tus necesidades */
+    }
+
+    .whatsapp-content {
+        padding-right: 10px;
+    }
+
+    .textos-header h5 {
+        font-size: 6px;
+    }
+
+    .wave {
+        height: 50px;
+    }
+
+    /* Servicios */
+
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .cards .card {
+        width: 35%;
+        height: 95px;
+        margin-bottom: 5px;
+
+    }
+
+    .cards .card img {
+        width: 20px;
         height: 20px;
-        margin-right: 10px;
+    }
+
+    .cards .card>.contenido-textos-card {
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .titulo-card {
+        font-size: 8px;
+    }
+
+    /* Portafolio */
+
+    .imagen-port {
+        width: 40%;
+        height: 150px;
     }
 
 
+    /* Seccion Precio */
+
+    .contenedorprecio {
+        padding: 30px 0;
+    }
+
+    .contenedorprecio .titulo{
+        font-size: 20px;
+    }
+
+    .about-services {
+        min-height: auto;
+    }
+
+    .servicio-cont {
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+
+    .servicio-ind {
+        margin-bottom: 20px;
+        width: 40%;
+    }
+    .servicio-ind h3{
+        margin: 1px 0;
+
+    }
 
 }
-
-

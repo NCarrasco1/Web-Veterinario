@@ -23,11 +23,6 @@ body {
 header {
     width: 100%;
     height: 650px;
-    background: linear-gradient(to right, hsla(191, 78%, 68%, 0), #2193b0);
-    background-image: url(../images/Portada\ 9-min.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
 }
 
 .titulo {
@@ -47,6 +42,15 @@ header {
 }
 
 /* Inicio Nav */
+
+.imgnav {
+    background: linear-gradient(to right, hsla(191, 78%, 68%, 0), #2193b0);
+    background-image: url(../images/Portada\ 9-min.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 650px;
+}
 
 .logo {
     position: absolute;
@@ -564,6 +568,10 @@ footer {
         /* Reduzco la altura para adaptarse mejor a pantallas más pequeñas */
     }
 
+    .imgnav {
+        height: 500px;
+    }
+
     .titulo {
         font-size: 30px;
         /* Reduzco el tamaño de la fuente */
@@ -580,7 +588,7 @@ footer {
 
     /* Nav */
     .logo {
-        top: -20px;
+        top: -40px;
         /* Ajusto la posición del logo */
         height: 150px;
         /* Reduzco el tamaño del logo */
@@ -751,55 +759,18 @@ footer {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
-
-    /* Clientes */
-
-    .cards .card {
-        height: 150px;
-        width: 40%;
-        /* Ajusta el ancho para que haya dos elementos por fila */
-        margin-bottom: 20px;
-        /* Añade espacio entre las filas */
-    }
-
-    .cards .card img {
-        width: 40px;
-        /* Ajusta el tamaño de la imagen según sea necesario */
-        height: 40px;
-    }
-
-    /* Precio */
-    .contenedorprecio {
-        padding: 20px 0;
-        /* Ajusta según sea necesario para pantallas más pequeñas */
-    }
-
-    .about-services {
-        min-height: auto;
-        /* Elimina la altura mínima para adaptarse al contenido */
-    }
-
-    .servicio-cont {
-        justify-content: space-evenly;
-        flex-direction: row;
-        /* Cambia la dirección del contenedor de servicios a columna en pantallas más pequeñas */
-    }
-
-    .servicio-ind {
-        margin-bottom: 20px;
-        width: 48%;
-        /* Ajusta el ancho al 45% para dos columnas de tres elementos cada una */
-    }
-}
 
 
-@media screen and (min-width: 501px) and (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
     header {
         width: 100%;
         height: auto;
         /* Ajusta la altura del encabezado según sea necesario */
+    }
+
+    .imgnav {
+        height: auto;
     }
 
     .titulo {
@@ -975,159 +946,143 @@ footer {
 
 }
 
-@media screen and (max-width:500px) {
+/* Estilos comunes para pantallas más pequeñas */
+@media screen and (max-width: 500px) {
 
-
+    /* Tamaño de la página */
     header {
         width: 100%;
-        height: auto;
-        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+        height: 40%;
+    }
+
+    .imgnav {
+        height: 250px;
     }
 
     .titulo {
-        font-size: 30px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
+        font-size: 18px;
         margin-bottom: 10px;
-        /* Ajusta el margen según sea necesario */
     }
 
     .titulo3 {
         font-size: 14px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
         margin-bottom: 20px;
-        /* Ajusta el margen según sea necesario */
     }
 
     /* Nav */
-
     .logo {
-        top: -10px;
+        top: -25px;
         height: 80px;
-        width: auto;
     }
 
     nav {
-        padding: 2px 2px 0px 2px;
-        /* Reduzco el espacio alrededor de los enlaces de navegación */
+        padding: 1px 5px 0px;
     }
 
     nav>a {
         font-size: 15px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
         margin: 0 5px;
-        /* Ajusta el margen según sea necesario */
     }
 
     .button-contacto {
-        width: 30%;
-        height: 3px;
+        width: auto;
+        height: 5%;
     }
 
     .numero-contacto {
         font-size: 12px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
     .button-redes img {
-        height: 25px;
+        height: 18px;
         width: auto;
-        margin: 10px 0;
+        margin: 5px 0;
         margin-right: 20px;
     }
 
-    .redes-sociales {
-        width: 5%;
-        height: 10%;
-        /* Ajusta la altura según sea necesario para pantallas más pequeñas */
+    .redes-sociales,
+    .redes-sociales1 {
+        width: 20px;
+        height: 20px;
     }
 
     .textos-header {
         font-size: 10px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
     .textos-header h1 {
-        font-size: 34px;
+        font-size: 25px;
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     .textos-header h2 {
-        font-size: 20px;
+        font-size: 15px;
         margin-bottom: 0;
     }
 
-
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 5%;
-        margin-top: 3px;
+        margin-bottom: 70%;
+        margin-top: 1px;
     }
 
     .whatsapp-button {
-        height: 35px;
-        width: 50%;
-        font-size: 10px;
+        height: 40px;
+        width: 60%;
+        font-size: 4px;
         padding: 0 5px;
-        margin-bottom: 5%;
+        margin-bottom: 0;
     }
 
-    .redes-sociales1 {
-        position: relative;
-        width: auto;
-        height: 20px;
-        margin-right: 20px;
+    .whatsapp-content {
+        padding-right: 10px;
     }
 
     .textos-header h5 {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .wave {
-        height: 30%;
+        height: 50px;
     }
 
     /* Servicios */
-
     .cards {
         flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
     .cards .card {
-        height: 150px;
-        width: 40%;
-        margin-bottom: 20px;
+        width: 38%;
+        height: 120px;
+        margin-bottom: 5px;
     }
 
     .cards .card img {
-        width: 35px;
-        height: 35px;
+        width: 30px;
+        height: 30px;
     }
 
     .cards .card>.contenido-textos-card {
-        width: 20%;
-        height: 20px;
+        width: 100%;
         text-align: center;
-        /* Centra el texto */
         margin-top: 10px;
-        /* Añade espacio entre la imagen y el texto */
     }
 
     .titulo-card {
-        font-size: 20px;
+        font-size: 14px;
     }
 
     /* Seccion Ventajas */
-
     .contenedor-sobre-nosotros {
         flex-direction: column;
         align-items: center;
     }
 
     .imagen-about-us {
-        width: 70%;
-        height: 70%;
+        width: 50%;
+        height: 50%;
         border-radius: 20px;
         margin-right: 20px;
         margin-bottom: 20px;
@@ -1143,11 +1098,10 @@ footer {
     }
 
     .contenido-textos h3 {
-        font-size: 25px;
+        font-size: 15px;
         text-align: center;
         margin-right: 20px;
         margin-left: 20px;
-        /* margin: 10px 0 20px 0 ; */
     }
 
     .logosucces {
@@ -1157,17 +1111,45 @@ footer {
         margin-left: 20px;
     }
 
+    /* Seccion Quienes Somos */
+    .quienes-somos {
+        width: 98%;
+        height: auto;
+    }
+
+    .imagen-quienes-somos {
+        width: 80%;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .contenido-textos-quienessomos {
+        width: 90%;
+    }
+
+    .contenido-textos-quienessomos h3 {
+        font-size: 16px;
+    }
+
+    .logoinfo {
+        width: 10%;
+        height: 40px;
+    }
+
     /* Portafolio */
     .imagen-port {
-        width: 35%;
-        height: 180px;
+        width: 40%;
+        height: 150px;
     }
 
     /* Seccion Precio */
-
     .contenedorprecio {
-        padding: 20px 0;
-        /* Ajusta según sea necesario para pantallas más pequeñas */
+        padding: 30px 0;
+    }
+
+    .contenedorprecio .titulo {
+        font-size: 20px;
     }
 
     .about-services {
@@ -1177,25 +1159,18 @@ footer {
     .servicio-cont {
         justify-content: space-evenly;
         flex-direction: row;
-        /* Cambia la dirección del contenedor de servicios a columna en pantallas más pequeñas */
     }
 
     .servicio-ind {
-        margin-bottom: 60px;
-        width: 35%;
-        height: 150px;
+        margin-bottom: 20px;
+        width: 40%;
     }
 
     .servicio-ind h3 {
-        font-size: 20px;
-    }
-
-    .servicio-ind p {
-        font-size: 20px;
+        margin: 1px 0;
     }
 
     /* Footer */
-
     .contenedor-footer {
         flex-direction: column;
         border: none;
@@ -1221,20 +1196,20 @@ footer {
     }
 }
 
-@media screen and (max-width: 448px) {
+@media screen and (max-width: 400px) {
 
-    /* Tamaño de la página */
+    /* Header */
     header {
         width: 100%;
-        height: 25%;
+        height: auto;
+        /* Ajusta la altura automáticamente en pantallas más pequeñas */
     }
 
-    .titulo {
-        font-size: 18px;
-        margin-bottom: 10px;
-    }
 
     /* Nav */
+    .imgnav {
+        height: 200px;
+    }
 
     .logo {
         top: -25px;
@@ -1242,8 +1217,7 @@ footer {
     }
 
     nav {
-        padding: 1px 5px 0px;
-        /* Reduzco el espacio alrededor de los enlaces de navegación */
+        padding: 0px 5px 0px;
     }
 
     nav>a {
@@ -1258,11 +1232,6 @@ footer {
 
     .numero-contacto {
         font-size: 12px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
-    }
-
-    .button-redes {
-        margin: auto;
     }
 
     .button-redes img {
@@ -1278,10 +1247,8 @@ footer {
         height: 20px;
     }
 
-
     .textos-header {
         font-size: 10px;
-        /* Ajusta el tamaño de fuente según sea necesario para pantallas más pequeñas */
     }
 
     .textos-header h1 {
@@ -1323,135 +1290,14 @@ footer {
 
     /* Servicios */
 
-    .cards {
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
-
     .cards .card {
-        width: 38%;
-        height: 120px;
+        width: 36%;
+        height: 130px;
         margin-bottom: 5px;
-
-    }
-
-    .cards .card img {
-        width: 30px;
-        height: 30px;
-    }
-
-    .cards .card>.contenido-textos-card {
-        width: 100%;
-        text-align: center;
-        margin-top: 10px;
     }
 
     .titulo-card {
-        font-size: 14px;
-    }
-
-
-    /* Seccion Ventajas */
-
-    .contenedor-sobre-nosotros {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .imagen-about-us {
-        width: 50%;
-        height: 50%;
-        border-radius: 20px;
-        margin-right: 20px;
-        margin-bottom: 20px;
-    }
-
-    .sobre-nosotros .contenido-textos {
-        width: 90%;
-    }
-
-    .contenido-textos {
-        order: -1;
-        margin-top: 20px;
-    }
-
-    .contenido-textos h3 {
-        font-size: 15px;
-        text-align: center;
-        margin-right: 20px;
-        margin-left: 20px;
-        /* margin: 10px 0 20px 0 ; */
-    }
-
-    .logosucces {
-        height: auto;
-        width: 10%;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-
-    /* Seccion Quienes Somos */
-
-    .quienes-somos {
-        width: 98%;
-        height: auto; /* Ajustar la altura automáticamente en pantallas más pequeñas */
-    }
-
-    .imagen-quienes-somos {
-        width: 80%; /* Ocupar todo el ancho en pantallas más pequeñas */
-        height: auto; /* Ajustar la altura automáticamente en pantallas más pequeñas */
-        margin-right: 0; /* Eliminar el margen derecho en pantallas más pequeñas */
-        margin-bottom: 20px; /* Ajustar el margen inferior en pantallas más pequeñas */
-    }
-
-    .contenido-textos-quienessomos {
-        width: 90%; /* Ocupar todo el ancho en pantallas más pequeñas */
-    }
-
-    .contenido-textos-quienessomos h3 {
-        font-size: 16px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
-    }
-
-    .logoinfo{
-        width: 10%;
-        height: 40px;
-    }
-
-    /* Portafolio */
-
-    .imagen-port {
-        width: 40%;
-        height: 150px;
-    }
-
-
-    /* Seccion Precio */
-
-    .contenedorprecio {
-        padding: 30px 0;
-    }
-
-    .contenedorprecio .titulo {
-        font-size: 20px;
-    }
-
-    .about-services {
-        min-height: auto;
-    }
-
-    .servicio-cont {
-        justify-content: space-evenly;
-        flex-direction: row;
-    }
-
-    .servicio-ind {
-        margin-bottom: 20px;
-        width: 40%;
-    }
-
-    .servicio-ind h3 {
-        margin: 1px 0;
-
+        font-size: 12px;
     }
 
 }

@@ -354,23 +354,26 @@ header .textos-header {
 
 .quienes-somos {
     width: 100%;
+    height: 900px;
     background-color: #f2f2f2;
     border-radius: 20px;
-    border-style:groove;
+    border-style: groove;
     border-color: #0096c433;
 }
 
 
- .contenedor-quienes-somos {
+.contenedor-quienes-somos {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+
 }
 
 
 .imagen-quienes-somos {
-    width: 40%;
+    width: 45%;
+    height: 700px;
     border-radius: 20px;
     margin-right: 20px;
     margin-bottom: 200px;
@@ -383,6 +386,10 @@ header .textos-header {
     width: 50%;
 }
 
+.logoinfo {
+    width: 40px;
+    height: 40px;
+}
 
 /* Seccion Portafolio */
 
@@ -1219,23 +1226,23 @@ footer {
     /* Tamaño de la página */
     header {
         width: 100%;
-        height: 50%;
+        height: 25%;
     }
 
     .titulo {
-        font-size: 24px;
+        font-size: 18px;
         margin-bottom: 10px;
     }
 
     /* Nav */
 
     .logo {
-        top: -10px;
+        top: -25px;
         height: 80px;
     }
-    
+
     nav {
-        padding: 12px 5px 0px;
+        padding: 1px 5px 0px;
         /* Reduzco el espacio alrededor de los enlaces de navegación */
     }
 
@@ -1255,11 +1262,11 @@ footer {
     }
 
     .button-redes {
-        margin:auto;
+        margin: auto;
     }
 
     .button-redes img {
-        height: 12px;
+        height: 18px;
         width: auto;
         margin: 5px 0;
         margin-right: 20px;
@@ -1290,8 +1297,8 @@ footer {
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: auto;
-        margin-top: 3px;
+        margin-bottom: 70%;
+        margin-top: 1px;
     }
 
     .whatsapp-button {
@@ -1307,7 +1314,7 @@ footer {
     }
 
     .textos-header h5 {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .wave {
@@ -1322,8 +1329,8 @@ footer {
     }
 
     .cards .card {
-        width: 40%;
-        height: 100px;
+        width: 38%;
+        height: 120px;
         margin-bottom: 5px;
 
     }
@@ -1341,6 +1348,73 @@ footer {
 
     .titulo-card {
         font-size: 14px;
+    }
+
+
+    /* Seccion Ventajas */
+
+    .contenedor-sobre-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagen-about-us {
+        width: 50%;
+        height: 50%;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sobre-nosotros .contenido-textos {
+        width: 90%;
+    }
+
+    .contenido-textos {
+        order: -1;
+        margin-top: 20px;
+    }
+
+    .contenido-textos h3 {
+        font-size: 15px;
+        text-align: center;
+        margin-right: 20px;
+        margin-left: 20px;
+        /* margin: 10px 0 20px 0 ; */
+    }
+
+    .logosucces {
+        height: auto;
+        width: 10%;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    /* Seccion Quienes Somos */
+
+    .quienes-somos {
+        width: 98%;
+        height: auto; /* Ajustar la altura automáticamente en pantallas más pequeñas */
+    }
+
+    .imagen-quienes-somos {
+        width: 80%; /* Ocupar todo el ancho en pantallas más pequeñas */
+        height: auto; /* Ajustar la altura automáticamente en pantallas más pequeñas */
+        margin-right: 0; /* Eliminar el margen derecho en pantallas más pequeñas */
+        margin-bottom: 20px; /* Ajustar el margen inferior en pantallas más pequeñas */
+    }
+
+    .contenido-textos-quienessomos {
+        width: 90%; /* Ocupar todo el ancho en pantallas más pequeñas */
+    }
+
+    .contenido-textos-quienessomos h3 {
+        font-size: 16px; /* Tamaño de fuente más pequeño para pantallas más pequeñas */
+    }
+
+    .logoinfo{
+        width: 10%;
+        height: 40px;
     }
 
     /* Portafolio */

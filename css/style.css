@@ -24,7 +24,7 @@ header {
     width: 100%;
     height: 650px;
     background: linear-gradient(to right, hsla(191, 78%, 68%, 0), #2193b0);
-    background-image: url(../images/Portada7\ cortada.png);
+    background-image: url(../images/Portada\ 9-min.png);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -350,12 +350,46 @@ header .textos-header {
     margin: 0;
 }
 
+/* Seccion Quienes Somos  */
+
+.quienes-somos {
+    width: 100%;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    border-style:groove;
+    border-color: #0096c433;
+}
+
+
+ .contenedor-quienes-somos {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.imagen-quienes-somos {
+    width: 40%;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-bottom: 200px;
+}
+
+.contenido-textos-quienessomos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+
+
 /* Seccion Portafolio */
 
-.portafolio {
+/* .portafolio {
     background-color: #f2f2f2;
 
-}
+} */
 
 
 .galeria-port {

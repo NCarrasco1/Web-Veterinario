@@ -728,6 +728,9 @@ footer {
         /* Centra el título */
     }
 
+    /* Seccion Quienes somos  */
+
+
     /* Portafolio */
 
     .imagen-port {
@@ -775,21 +778,17 @@ footer {
 
     .titulo {
         font-size: 30px;
-        /* Ajusta el tamaño de la fuente */
         margin-bottom: 10px;
     }
 
     .titulo3 {
         font-size: 14px;
-        /* Ajusta el tamaño de la fuente */
         margin-bottom: 20px;
     }
 
     .logo {
-        height: 90px;
-        /* Ajusta la altura del logo */
-        top: -10px;
-        /* Ajusta la posición del logo */
+        height: 100px;
+        top: -20px;
     }
 
     nav {
@@ -861,7 +860,7 @@ footer {
     }
 
     .whatsapp-button {
-        width: 80%;
+        width: 50%;
         height: auto;
         padding: 6px 8px;
     }
@@ -869,6 +868,8 @@ footer {
     .wave {
         height: 20%;
     }
+
+    /* Seccion Servicios */
 
     .cards .card {
         height: 150px;
@@ -884,6 +885,60 @@ footer {
         height: 40px;
     }
 
+    /* Seccion ventajas  */
+
+    .imagen-about-us {
+        width: 70%;
+        height: 50%;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .contenido-textos{
+        display: flex;
+        align-items: center;
+    }
+
+    .contenido-textos h3 {
+        font-size: 20px;
+    }
+
+    .logosucces{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    /* Seccion Quienes Somos */
+
+    .quienes-somos {
+        width: 98%;
+        height: auto;
+    }
+
+    .imagen-quienes-somos {
+        width: 70%;
+        height: 50%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .contenido-textos-quienessomos {
+        width: 90%;
+    }
+
+    .contenido-textos-quienessomos h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .logoinfo {
+        width: 10%;
+        height: 40px;
+    }
+
+
+    /* Seccion Precio */
     .contenedorprecio {
         padding: 20px 0;
         /* Ajusta según sea necesario para pantallas más pequeñas */
@@ -994,9 +1049,9 @@ footer {
     }
 
     .button-redes img {
-        height: 18px;
+        height: 25px;
         width: auto;
-        margin: 5px 0;
+        margin: 10px 0;
         margin-right: 20px;
     }
 
@@ -1023,8 +1078,8 @@ footer {
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 70%;
-        margin-top: 1px;
+        margin-bottom: 30%;
+        margin-top: 15px;
     }
 
     .whatsapp-button {
@@ -1235,9 +1290,9 @@ footer {
     }
 
     .button-redes img {
-        height: 18px;
+        height: 20px;
         width: auto;
-        margin: 5px 0;
+        margin: 10px 0;
         margin-right: 20px;
     }
 
@@ -1252,25 +1307,25 @@ footer {
     }
 
     .textos-header h1 {
-        font-size: 25px;
+        font-size: 20px;
         margin-bottom: 0;
         margin-top: 5px;
     }
 
     .textos-header h2 {
-        font-size: 15px;
+        font-size: 10px;
         margin-bottom: 0;
     }
 
     .button-container-whatsapp {
         margin-left: 30%;
-        margin-bottom: 70%;
-        margin-top: 1px;
+        margin-bottom: 50%;
+        margin-top: 5px;
     }
 
     .whatsapp-button {
         height: 40px;
-        width: 60%;
+        width: 50%;
         font-size: 4px;
         padding: 0 5px;
         margin-bottom: 0;
@@ -1281,7 +1336,7 @@ footer {
     }
 
     .textos-header h5 {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .wave {
@@ -1291,13 +1346,50 @@ footer {
     /* Servicios */
 
     .cards .card {
-        width: 36%;
+        width: 34%;
         height: 130px;
         margin-bottom: 5px;
     }
 
     .titulo-card {
         font-size: 12px;
+    }
+
+    /* Ventajas */
+
+    .imagen-about-us {
+        width: 80%;
+        border-radius: 20px;
+        margin-right: 20px;
+        margin-bottom: 200px;
+    }
+
+
+    /* Footer */
+    .contenedor-footer {
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4 {
+        border: none;
+        font-size: 20px;
+    }
+
+    .content-foo p {
+        color: #000000;
+        border-bottom: 1px solid #0395a8;
+        padding-bottom: 20px;
+        font-size: 15px;
+    }
+
+    .titulo-final {
+        font-size: 15px;
     }
 
 }

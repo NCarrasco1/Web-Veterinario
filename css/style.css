@@ -45,7 +45,7 @@ header {
 
 .imgnav {
     background: linear-gradient(to right, hsla(191, 78%, 68%, 0), #2193b0);
-    background-image: url(../images/portadanew1.svg);
+    background-image: url(../images/veterinario\ web.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -376,7 +376,7 @@ header .textos-header {
 
 .imagen-quienes-somos {
     width: 45%;
-    height: 700px;
+    height: 600px;
     border-radius: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
